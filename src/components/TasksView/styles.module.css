@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .container header section h2 {
@@ -40,18 +40,18 @@
 }
 
 .added h2 {
-    color: blue;
+    color: #34558a;
 }
 
 .finished h2 {
-    color: blueviolet;
+    color: rgb(129, 78, 177);
 }
 
 .empty {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
+    margin-block-start: 7vh;
     flex-direction: column;
     color: #585858;
     font-size: 16px;
@@ -63,4 +63,5 @@
 
 .empty p {
     font-size: 14px;
+    margin-block-start: -0.5vh;
 }
