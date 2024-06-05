@@ -1,6 +1,6 @@
 .task {
-    width: 100%;
-    min-height: 72px;
+    width: 694px;
+    height: 6vh;
     background: #262626;
     border: 2px solid #333333;
     border-radius: 16px;
@@ -9,19 +9,18 @@
     justify-content: space-between;
     padding: 16px 20px;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-block-end: 15px;
 }
 
 .task button {
-    min-width: 16px;
-    height: 16px;
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 .task button section {
-    width: 100%;
-    height: 100%;
+    width: 20px;
+    height: 20px;
     border: 2px solid #007bff;
     border-radius: 25px;
     display: flex;
@@ -30,10 +29,26 @@
 }
 
 .finish {
-    background: blueviolet;
-    border: 2px solid blueviolet;
+    background: rgb(129, 78, 177);
 }
 
+.task input {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.18rem;
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .task input.finished {
+    text-decoration: line-through;
+    color: #585858;
+  }
+
 .task img {
+    width: 30px;
     cursor: pointer;
 }

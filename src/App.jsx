@@ -58,11 +58,31 @@ function App() {
     saveTasks(filteredTasks);
   };
 
+  const handleEditTask = (id, newTitle) => {
+    const filteredTasks = tasks.map((task) => {
+      if (task.id === id) {
+        return {
+          ...task,
+          title: newTitle,
+        };
+      }
+
+      return task;
+    });
+
+    saveTasks(filteredTasks);
+  };
+
   return (
     <div>
       <Header />
       <TaskInput handleAddTask={handleAddTask} />
-      <TasksView tasks={tasks} handleFinishTask={handleFinishTask} handleDeleteTask={handleDeleteTask} />
+      <TasksView
+        tasks={tasks}
+        handleFinishTask={handleFinishTask}
+        handleDeleteTask={handleDeleteTask}
+        handleEditTask={handleEditTask}
+      />
     </div>
   );
 }

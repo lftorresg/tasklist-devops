@@ -8,6 +8,7 @@ export default function TasksView({
   tasks,
   handleFinishTask,
   handleDeleteTask,
+  handleEditTask
 }) {
 
   if (!tasks) return null;
@@ -47,6 +48,7 @@ export default function TasksView({
           task={task}
           handleFinishTask={handleFinishTask}
           handleDeleteTask={handleDeleteTask}
+          handleEditTask={handleEditTask}
         />
       ))}
     </section>
