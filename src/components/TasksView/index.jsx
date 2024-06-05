@@ -15,7 +15,7 @@ export default function TasksView({
 
   const totalTasks = tasks.length;
 
-  const completedTasks = tasks.filter((task) => task.completed).length;
+  const finishedTasks = tasks.filter((task) => task.finished).length;
 
   return (
     <section className={styles.container}>
@@ -29,7 +29,7 @@ export default function TasksView({
         <section className={styles.finished}>
           <h2>Tarefas Concluídas</h2>
           <span aria-label="Progresso" role="status">
-            {completedTasks}/{totalTasks}
+            {finishedTasks}/{totalTasks}
           </span>
         </section>
       </header>
