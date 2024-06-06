@@ -1,0 +1,54 @@
+.task {
+    width: 694px;
+    height: 6vh;
+    background: #262626;
+    border: 2px solid #333333;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    gap: 12px;
+    margin-block-end: 15px;
+}
+
+.task button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.task button section {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish {
+    background: rgb(129, 78, 177);
+}
+
+.task input {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.18rem;
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .task input.finished {
+    text-decoration: line-through;
+    color: #585858;
+  }
+
+.task img {
+    width: 30px;
+    cursor: pointer;
+}

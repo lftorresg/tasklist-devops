@@ -1,0 +1,45 @@
+.taskbox {
+    margin-block-start: 5vh;
+    min-width: 55vw;
+    height: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-inline-start: 22vw;
+}
+
+.taskbox input {
+    flex: 1;
+    min-width: 25vw;
+    height: 100%;
+    background: #262626;
+    border: none;
+    border-radius: 15px;
+    outline: 0;
+    padding: 2vh 2vw;
+    font-size: 1.1rem;
+    color: #fffffff1;
+}
+
+.taskbox button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 5vh;
+    width: 3.5vw;
+    border: none;
+    border-radius: 25px;
+    margin-inline-start: 2vw;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.taskbox button img {
+    height: 3vh;
+}
+
+.taskbox button:hover {
+    background: #04082b;
+    transition: .15s ease-in;    
+}

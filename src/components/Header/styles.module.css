@@ -1,0 +1,20 @@
+.header {
+  background-color: #04082b;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-block-start: 2vh;
+}
+
+.header img {
+  height: 16vh;
+}
+
+.header h1 {
+  color:azure;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
